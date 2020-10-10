@@ -13,6 +13,7 @@ const chainMaker = {
     if (!isNaN(position) && this.chainsArray[position - 1]) {
       this.chainsArray.splice(position - 1, 1);
     } else {
+      this.chainsArray = [];
       throw new Error("Something went wrong!");
     }
     return this;
